@@ -1,5 +1,5 @@
 # Horse-Health-Prediction
-PROJECT LINK https://www.kaggle.com/competitions/playground-series-s3e22/data?select=train.csv
+[PROJECT LINK](https://www.kaggle.com/competitions/playground-series-s3e22/data?select=train.csv).
  BRIEF OVERVIEW-  While reading about this dataset, I found that it is synthetic (created by using algorithms and simulations based on generative artificial intelligence technologies) which explains certain inconsistencies.
 The Predict Health Outcomes of Horses project is dedicated to a multi-class classification challenge. The target variable is the horse's outcome, which can fall into different classes.
 
@@ -57,6 +57,7 @@ lesion_1, lesion_2, lesion_3: Ratio data related to lesions (some of which may b
 
 cp_data: Nominal data indicating the presence of central nervous system disorders.
 
-outcome: Target variable representing the horse's health outcome.
+outcome: Target variable representing the horse's health outcome( L, E, D).
 
-LIBRARIES I USED import numpy as np import pandas as pd
+>DATA DESCRIPTION
+
