@@ -60,5 +60,15 @@ cp_data: Nominal data indicating the presence of central nervous system disorder
 outcome: Target variable representing the horse's health outcome( L, E, D).
 
 >DATA DESCRIPTION
-*Have both train and test set, total of 29/28 columns and 1235 entries.
-*All missing values came from the categorical columns .The categorical columns with missing values: ['temp_of_extremities', 'peripheral_pulse', 'mucous_membrane', 'capillary_refill_time', 'pain', 'peristalsis', 'abdominal_distention', 'nasogastric_tube', 'nasogastric_reflux', 'rectal_exam_feces', 'abdomen', 'abdomo_appearance']
+- Have both train and test set, total of 29/28 columns and 1235/824 entries.
+- Data is 59% categorical cols
+-All missing values came from the categorical columns .The categorical columns with missing values: ['temp_of_extremities', 'peripheral_pulse', 'mucous_membrane', 'capillary_refill_time', 'pain', 'peristalsis', 'abdominal_distention', 'nasogastric_tube', 'nasogastric_reflux', 'rectal_exam_feces', 'abdomen', 'abdomo_appearance']
+-No significant class imbalance (>20%)
+
+*DATA VISUALIZATION* (Both for the categorical and numerical values)
+![image](https://github.com/fs239188/Horse-Health-Prediction/assets/143844308/1e370f1b-bb57-4689-bcff-07607db4db49)
+![image](https://github.com/fs239188/Horse-Health-Prediction/assets/143844308/affcd6a6-738b-4d69-8fdc-96282d3baac9)
+![image](https://github.com/fs239188/Horse-Health-Prediction/assets/143844308/18cc0dd8-ff7d-49ae-bb97-d49f14cddbc3)
+
+![image](https://github.com/fs239188/Horse-Health-Prediction/assets/143844308/45db8006-d310-4707-8f7e-e09556fca996)
+
