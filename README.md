@@ -75,7 +75,11 @@ outcome: Target variable representing the horse's health outcome( L, E, D).
 *FEATURE ENGINEERING*
 - One-Hot Encoding: I applied one-hot encoding to categorical variables to convert them into a format suitable for the machine learning algorithms.
 - Normalized numerical features to bring them to the same scale using MinMaxScaler.
+- Dealt with outliers using z score method.
 - Dropped ID and Hospital number (not useful with the model), Lesion_1, Lesion_2, Lesion_3(90% null values) and cp_data(non relevant).
 
 *MACHINE LEARNING*
+- Split using standard 80-20
 - I used both Random Forest(An ensemble learning method that constructs multiple decision trees during training and outputs the mode of the classes for classification tasks. Random forest was selected for its ability to handle non-linear relationships, handle categorical variables, and reduce overfittin and XGBoost(computationally effective and can quickly train models on large datasets) 69% and 66% accuracy respectively.
+  
+![image](https://github.com/fs239188/Horse-Health-Prediction/assets/143844308/1ff245c8-cb2a-4b71-bb6a-8152f2fd4036)
