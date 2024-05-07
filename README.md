@@ -62,8 +62,8 @@ outcome: Target variable representing the horse's health outcome( L, E, D).
 >DATA DESCRIPTION
 - Have both train and test set, total of 29/28 columns and 1235/824 entries.
 - Data is 59% categorical cols
--All missing values came from the categorical columns .The categorical columns with missing values: ['temp_of_extremities', 'peripheral_pulse', 'mucous_membrane', 'capillary_refill_time', 'pain', 'peristalsis', 'abdominal_distention', 'nasogastric_tube', 'nasogastric_reflux', 'rectal_exam_feces', 'abdomen', 'abdomo_appearance']
--No significant class imbalance (>20%)
+- All missing values came from the categorical columns .The categorical columns with missing values: ['temp_of_extremities', 'peripheral_pulse', 'mucous_membrane', 'capillary_refill_time', 'pain', 'peristalsis', 'abdominal_distention', 'nasogastric_tube', 'nasogastric_reflux', 'rectal_exam_feces', 'abdomen', 'abdomo_appearance']
+- No significant class imbalance (>20%)
 
 *DATA VISUALIZATION* (Both for the categorical and numerical values)
 ![image](https://github.com/fs239188/Horse-Health-Prediction/assets/143844308/1e370f1b-bb57-4689-bcff-07607db4db49)
@@ -72,3 +72,10 @@ outcome: Target variable representing the horse's health outcome( L, E, D).
 
 ![image](https://github.com/fs239188/Horse-Health-Prediction/assets/143844308/45db8006-d310-4707-8f7e-e09556fca996)
 
+*FEATURE ENGINEERING*
+- One-Hot Encoding: I applied one-hot encoding to categorical variables to convert them into a format suitable for the machine learning algorithms.
+- Normalized numerical features to bring them to the same scale using MinMaxScaler.
+- Dropped ID and Hospital number (not useful with the model), Lesion_1, Lesion_2, Lesion_3(90% null values) and cp_data(non relevant).
+
+*MACHINE LEARNING*
+- I used both Random Forest(An ensemble learning method that constructs multiple decision trees during training and outputs the mode of the classes for classification tasks. Random forest was selected for its ability to handle non-linear relationships, handle categorical variables, and reduce overfittin and XGBoost(computationally effective and can quickly train models on large datasets) 69% and 66% accuracy respectively.
