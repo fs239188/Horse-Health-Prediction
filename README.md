@@ -60,4 +60,5 @@ cp_data: Nominal data indicating the presence of central nervous system disorder
 outcome: Target variable representing the horse's health outcome( L, E, D).
 
 >DATA DESCRIPTION
-
+*Have both train and test set, total of 29/28 columns and 1235 entries.
+*All missing values came from the categorical columns .The categorical columns with missing values: ['temp_of_extremities', 'peripheral_pulse', 'mucous_membrane', 'capillary_refill_time', 'pain', 'peristalsis', 'abdominal_distention', 'nasogastric_tube', 'nasogastric_reflux', 'rectal_exam_feces', 'abdomen', 'abdomo_appearance']
