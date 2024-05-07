@@ -82,12 +82,13 @@ outcome: Target variable representing the horse's health outcome( L, E, D).
 - Split using standard 80-20
 - I used both Random Forest(An ensemble learning method that constructs multiple decision trees during training and outputs the mode of the classes for classification tasks. Random forest was selected for its ability to handle non-linear relationships, handle categorical variables, and reduce overfittin and XGBoost(computationally effective and can quickly train models on large datasets) 69% and 66% accuracy respectively.
 
-*<The RF feature importance establishes my prior predictions as to which columns contribute the most to the horse outcomes>*
+<The RF feature importance establishes my prior predictions as to which columns contribute the most to the horse outcomes>
+ 
 ![image](https://github.com/fs239188/Horse-Health-Prediction/assets/143844308/1ff245c8-cb2a-4b71-bb6a-8152f2fd4036)
 
 - *Future Work*
 Model Selection: Experiment with more advanced machine learning algorithms to improve predictive performance.
 Feautres: Do more than just dropping certain columns.
 
-#*Overview of files in repository*#
+#*Overview of files in repository*
 FinalPYthon2.ipynb: This notebook contains code for evaluating the performance of the trained models. It includes functions for data cleaning, preprocessing, model training, evaluation, and visualization.
